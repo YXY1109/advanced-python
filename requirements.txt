@@ -1,0 +1,4 @@
+numpy==1.26.4
+moviepy==2.1.2
+openai==1.72.0
+openai-whisper==20240930
