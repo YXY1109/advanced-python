@@ -8,8 +8,10 @@ from tqdm import tqdm
 
 load_dotenv()
 
-whisper_model = "base"
-video_path = r"/Users/cj/PycharmProjects/advanced-python/files"
+# whisper_model = "large-v3"
+whisper_model = "large-v3-turbo"
+# whisper_model = "base"
+video_path = r"D:\PycharmProjects\advanced-python\files"
 
 
 def extract_audio_from_video(video_path, audio_path):
@@ -26,7 +28,7 @@ def extract_audio_from_video(video_path, audio_path):
 
 def audio_to_text(audio_path: str):
     try:
-        model = whisper.load_model(whisper_model)
+        model = whisper.load_model(whisper_model, device="cuda", download_root=r"D:\whisper")
         result = model.transcribe(audio_path)
         text = result["text"]
         print("语音转文本完成")
@@ -82,6 +84,9 @@ def main(video_path, audio_path, md_path):
     # 删除临时音频文件
     if os.path.exists(audio_path):
         os.remove(audio_path)
+
+    if os.path.exists(video_path):
+        os.remove(video_path)
 
 
 if __name__ == "__main__":
