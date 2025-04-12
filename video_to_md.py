@@ -8,9 +8,9 @@ from tqdm import tqdm
 
 load_dotenv()
 
-# whisper_model = "large-v3"
-whisper_model = "large-v3-turbo"
-# whisper_model = "base"
+# whisper_model = "large-v3" #太慢了
+# whisper_model = "base" #效果一般
+whisper_model = "large-v3-turbo"  # 参考whisper模型对比.png
 video_path = r"D:\PycharmProjects\advanced-python\files"
 
 
@@ -93,9 +93,10 @@ if __name__ == "__main__":
 
     # 读取files目录下所有文件
     files = os.listdir(video_path)
+    # 只处理mp4文件
+    files = [file for file in files if file.endswith(".mp4")]
     for file in tqdm(files):
-        if file.endswith(".mp4"):
-            video_path = os.path.join("files", file)
-            audio_path = os.path.join("files", file.replace(".mp4", ".wav"))
-            md_path = os.path.join("files", file.replace(".mp4", ".md"))
-            main(video_path, audio_path, md_path)
+        video_path = os.path.join("files", file)
+        audio_path = os.path.join("files", file.replace(".mp4", ".wav"))
+        md_path = os.path.join("files", file.replace(".mp4", ".md"))
+        main(video_path, audio_path, md_path)
