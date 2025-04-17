@@ -67,7 +67,7 @@ def save_to_md(summary, md_path):
 
 def main(video_path, audio_path, md_path):
     # 提取音频
-    extract_audio_from_video(video_path, audio_path)
+    # extract_audio_from_video(video_path, audio_path)
 
     # 语音转文本
     text = audio_to_text(audio_path)
