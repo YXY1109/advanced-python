@@ -8,8 +8,8 @@ from tqdm import tqdm
 
 load_dotenv()
 
-# whisper_model = "large-v3" #太慢了
-# whisper_model = "base" #效果一般
+# whisper_model = "large-v3"  # 太慢了
+# whisper_model = "base"  # 效果一般
 whisper_model = "large-v3-turbo"  # 参考whisper模型对比.png
 video_path = r"D:\PycharmProjects\advanced-python\files"
 
