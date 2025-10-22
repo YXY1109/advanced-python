@@ -1,4 +1,6 @@
-在上一节课中介绍了Python的字典（Dict）的ABC继承关系，本节课主要讲解Dict的一些常用操作和方法。字典有很多方法，包括常见的和一些学生可能不太熟悉的方法，如`clear`、`copy`、`fromkeys`、`get`、`items`、`keys`、`pop`、`popitem`、`setdefault`和`update`。在PyCharm等集成开发环境中，用户可以查看这些方法的具体实现，并通过源码了解它们的作用。
+在上一节课中介绍了Python的字典（Dict）的ABC继承关系，本节课主要讲解Dict的一些常用操作和方法。字典有很多方法，包括常见的和一些学生可能不太熟悉的方法，如
+`clear`、`copy`、`fromkeys`、`get`、`items`、`keys`、`pop`、`popitem`、`setdefault`和`update`
+。在PyCharm等集成开发环境中，用户可以查看这些方法的具体实现，并通过源码了解它们的作用。
 
 - `clear`方法用于清空字典中的所有条目。
 - `copy`方法返回字典的浅拷贝，而深拷贝需要使用`copy`模块中的`deepcopy`函数。
