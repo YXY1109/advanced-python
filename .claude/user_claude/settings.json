@@ -1,0 +1,46 @@
+{
+  "alwaysThinkingEnabled": false,
+  "permissions": {
+    "allow": [
+      "Bash(echo:*)",
+      "Bash(sudo ln:*)",
+      "Bash(source:*)",
+      "Bash(docker:*)",
+      "Bash(uv add:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(mkdir:*)",
+      "Bash(rg:*)",
+      "Bash(ls:*)",
+      "Bash(awk:*)",
+      "Bash(curl:*)",
+      "Bash(cat:*)"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+           {
+              "type": "command",
+              "command": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\YXY1109\\.claude\\notify_advanced.ps1\" -Message \"等待许可\" -Type \"notification\""
+           }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+			"type": "command",
+			"command": "powershell -ExecutionPolicy Bypass -File \"C:\\Users\\YXY1109\\.claude\\notify_advanced.ps1\" -Message \"任务完成\" -Type \"completion\""
+          }
+        ]
+      }
+    ]
+  }
+}
