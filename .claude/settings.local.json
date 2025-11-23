@@ -11,7 +11,8 @@
       "Bash(nul)",
       "Bash(python3:*)",
       "Bash(.\\venv\\Scripts\\python.exe:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
