@@ -175,4 +175,3 @@ cython_debug/
 
 *.mp4
 /files/
-/.claude/

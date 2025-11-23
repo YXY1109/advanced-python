@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(python:*)",
+      "Bash(where:*)",
+      "Bash(\"D:\\PycharmProjects\\advanced-python\\venv\\Scripts\\python.exe\":*)",
+      "Bash(D:\\PycharmProjects\\advanced-python\\venv\\Scripts\\python.exe:*)",
+      "Bash(dir:*)",
+      "Bash(powershell:*)",
+      "Bash(nul)",
+      "Bash(python3:*)",
+      "Bash(.\\venv\\Scripts\\python.exe:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
