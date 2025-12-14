@@ -11,9 +11,10 @@ load_dotenv()
 
 base_url = os.environ["OPENAI_BASE_URL"]
 api_key = os.environ["OPENAI_API_KEY"]
+model_name = "gpt-3.5-turbo"
 
 agent = Agent(
-    model=OpenAIChat(api_key=api_key, id="gpt-3.5-turbo", base_url=base_url),
+    model=OpenAIChat(api_key=api_key, id=model_name, base_url=base_url),
     tools=[HackerNewsTools()],
     instructions="Write a report on the topic. Output only the report. limit the report to 50 words. 使用中文输出",
     markdown=True,
