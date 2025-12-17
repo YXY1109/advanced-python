@@ -83,13 +83,14 @@ def edit_image(prompt: str, image_url: str, output_filename: str = "result_image
 
 if __name__ == "__main__":
     # 文档：https://modelscope.cn/docs/model-service/API-Inference/intro
+
     # 示例：将女孩的头发变成蓝色
-    prompt = "turn the girl's hair blue"
-    image_url = "https://resources.modelscope.cn/aigc/image_edit.png"
+    # prompt = "turn the girl's hair blue"
+    # image_url = "https://resources.modelscope.cn/aigc/image_edit.png"
 
     # 示例：图片中眼睛睁大
-    # prompt = "Just keep your eyes a bit wider and more natural; don’t change anything else."
-    # image_url = "https://thumbnail0.baidupcs.com/thumbnail/00dfb16ebi3f725c356cda57538e5be4?fid=488197452-250528-758737685988322&time=1765980000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-nSnhic%2F%2Fz2OdEupDr7rmzKQpE7s%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=68610938986884365&dp-callid=0&file_type=0&size=c710_u400&quality=100&vuk=-&ft=video"
+    prompt = "Just keep your eyes a bit wider and more natural; don’t change anything else."
+    image_url = "https://raw.githubusercontent.com/YXY1109/advanced-python/refs/heads/master/image_edit/open_eyes_1024.png"
 
     print("开始图像编辑...")
     # 根据image_url生成输出文件名
