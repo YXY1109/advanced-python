@@ -90,7 +90,8 @@ if __name__ == "__main__":
 
     # 示例：图片中眼睛睁大
     prompt = "Just keep your eyes a bit wider and more natural; don’t change anything else."
-    image_url = "https://raw.githubusercontent.com/YXY1109/advanced-python/refs/heads/master/image_edit/open_eyes_1024.png"
+    # 图片上传的七牛云
+    image_url = "http://t7f5gbka2.hn-bkt.clouddn.com/open_eyes_1024.png"
 
     print("开始图像编辑...")
     # 根据image_url生成输出文件名
