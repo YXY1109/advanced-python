@@ -19,7 +19,8 @@
       "WebFetch(domain:api.github.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
       "Bash(fi)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(cd:*)"
     ],
     "deny": [],
     "ask": []
